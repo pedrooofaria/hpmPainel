@@ -9,11 +9,9 @@ export class PainelService {
 
     constructor(private http: HttpClient) { }
 
-    public senhas: Senha[]
-
     public getSenha(): Promise<Senha[]> {
         return this.http.get<Senha[]>('http://localhost:3000/fila?status_presente=true')
             .toPromise()
-            .then((resposta: any) => resposta.json());
+            .then((data) => data);
     }
 }
