@@ -1,13 +1,19 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Senha } from './shared/senha.model'
 
+//import 'rxjs/add/operator/toPromise'
+
+@Injectable()
 export class PainelService {
 
-    public senhas: Senha[] = [
-        rg: '5324255 SSP-GO',
-        box: 1
-    ]
+    constructor(private http: HttpClient) { }
 
-    public getSenha(): Array<Senha> {
-        return this.senhas
+    public senhas: Senha[]
+
+    public getSenha(): Promise<Senha[]> {
+        return this.http.get<Senha[]>('http://localhost:3000/fila?status_presente=true')
+            .toPromise()
+            .then((resposta: any) => resposta.json());
     }
 }

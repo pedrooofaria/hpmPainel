@@ -1,0 +1,55 @@
+html{
+    overflow:hidden;
+}
+
+
+body {
+    background: url(
+        '../../assets/background_hospital_1200x900.jpg'
+    ) no-repeat center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.card {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+#bloco1{ 
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#bloco2{ 
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.titulo{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.destaque{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 90px;
+}
+table, thead{
+    border-color: transparent;
+}

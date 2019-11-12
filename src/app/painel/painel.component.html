@@ -1,6 +1,88 @@
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">RG: {{ senha.rg }}</h1>
-      <p class="lead">bla bla bla</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta charset="UTF-8" />
+    <title>***Painel HPM***</title>
+  </head>
+  
+  <body>
+  
+  <div class="card">
+    <div class="card-body">
+        <img src="../../assets/logo-hpm-2014-220x80.png" height="80" width="220"style="position: relative; float: left;">
+        <img src="../../assets/pm-logo.png" height="70" width="212" style="position: relative; float: right;">
+        <img src="../../assets/fundacao-logo.png" height="70" width="186" style="position: relative; float: right;">
     </div>
   </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6" id="bloco1">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <div class="row">
+            <div class="col">
+              <div class="titulo">Senha Atual</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h1 class="destaque">0001</h1>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col">
+                <div class="titulo">Box</div>
+              </div>
+            </div>
+          <div class="row">
+              <div class="col">
+                <h1 class="destaque">0001</h1>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col">
+              <h3>Nome: {{ nome_atual }}</h3>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col">
+                <h3>RG: {{ rg_atual }}</h3>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6" id="bloco2">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <div class="titulo">Senhas Anteriores</div>
+          <table class="table">
+              <thead>
+                  <tr>
+                    <th scope="col">Senha</th>
+                    <th scope="col">Box</th>
+                  </tr>
+                </thead>
+              <tbody>
+                <tr>
+                  <td>0003</td>
+                  <td>0001</td>
+                </tr>
+                <tr>
+                  <td>0012</td>
+                  <td>0002</td>
+                </tr>
+                <tr>
+                  <td>0027</td>
+                  <td>0004</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

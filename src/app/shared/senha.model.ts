@@ -1,4 +1,7 @@
 export class Senha {
+    public senha: number
     public rg: string
-    public box: number
+    public nome: string
+    public status_presente: boolean
+    public status_atendido: boolean
 }
