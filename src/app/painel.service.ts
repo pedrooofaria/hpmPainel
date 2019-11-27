@@ -9,9 +9,15 @@ export class PainelService {
 
     constructor(private http: HttpClient) { }
 
-    public getSenha(): Promise<Senha[]> {
-        return this.http.get<Senha[]>('http://localhost:3000/fila?status_presente=true')
-            .toPromise()
-            .then((data) => data);
+    public async getSenha(): Promise<Senha[]> {
+        const data = await this.http.get<Senha[]>('http://localhost:3000/fila')
+            .toPromise();
+        return data;
+    }
+
+    public async getProximo(): Promise<Senha> {
+        const data = await this.http.get<Senha>('http://localhost:3000/fila?proximo=true')
+            .toPromise();
+        return data;
     }
 }

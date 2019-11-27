@@ -1,46 +1,47 @@
 { 
 	"fila": [
 		{
-			"senha": 1,
+			"id": 1,
 			"rg": "111111",
 			"nome": "Fulano de Tal",
-			"status_presente": true,
-			"status_atendido": false
+			"proximo": true,
+			"box": 1		
+
 		},
 		{
-			"senha": 2,
+			"id": 2,
 			"rg": "222222",
 			"nome": "Ciclano de Tal",
-			"status_presente": true,
-			"status_atendido": false
+			"proximo": false,
+			"box": null
 		},
 		{
-			"senha": 3,
+			"id": 3,
 			"rg": "333333",
 			"nome": "Beltrano de Tal",
-			"status_presente": false,
-			"status_atendido": false
+			"proximo": false,
+			"box": null		
 		},
 		{
-			"senha": 4,
+			"id": 4,
 			"rg": "444444",
 			"nome": "Sujeito da Silva",
-			"status_presente": false,
-			"status_atendido": false
+			"proximo": false,
+			"box": null
 		},
 		{
-			"senha": 5,
+			"id": 5,
 			"rg": "555555",
 			"nome": "Fulano da Silva",
-			"status_presente": false,
-			"status_atendido": false
+			"proximo": false,
+			"box": null
 		},
 		{
-			"senha": 1,
+			"id": 1,
 			"rg": "666666",
 			"nome": "Alguem Pereira",
-			"status_presente": false,
-			"status_atendido": false
+			"proximo": false,
+			"box": null
 		}
 	]
 }

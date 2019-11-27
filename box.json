@@ -1,0 +1,28 @@
+{ 
+	"box": [
+		{
+			"id": 1,
+			"disponibilidade": false
+		},
+		{
+			"id": 2,
+			"disponibilidade": false
+		},
+		{
+			"id": 3,
+			"disponibilidade": false
+		},
+		{
+			"id": 4,
+			"disponibilidade": false
+		},
+		{
+			"id": 5,
+			"disponibilidade": false
+		},
+		{
+			"id": 6,
+			"disponibilidade": false
+		}
+	]
+}

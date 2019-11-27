@@ -4,6 +4,26 @@
     <meta http-equiv="Content-Type" content="text/html" />
     <meta charset="UTF-8" />
     <title>***Painel HPM***</title>
+
+    <script>
+      function showTime(){
+        var time = new Date();
+        var hour = time.getHours();
+        var minute = time.getMinutes();
+        var second = time.getSeconds();
+
+        if(hour<10) hour = "0"+hour;
+        if(minute<10) minute = "0"+minute;
+        if(second<10) second = "0"+second;
+        var tempo = hour+":"+minute+":"+second;
+
+        document.getElementById("timer").innerHTML=tempo;
+      }
+
+      function initTime(){
+        setInterval(showTime, 1000)
+      }
+    </script>
   </head>
   
   <body>
@@ -27,7 +47,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <h1 class="destaque">0001</h1>
+              <h1 class="destaque">{{ nomeP }}</h1>
             </div>
           </div>
           <div class="row">
@@ -42,12 +62,12 @@
             </div>
           <div class="row">
             <div class="col">
-              <h3>Nome: {{ senhas[0].nome }}</h3>
+              <h3>Nome: </h3>
             </div>
           </div>
           <div class="row">
               <div class="col">
-                <h3>RG: {{ senhas[0].rg }}</h3>
+                <h3>RG: ... </h3>
               </div>
             </div>
         </div>
